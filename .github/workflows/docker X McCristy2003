@@ -1,4 +1,4 @@
-name: Docker
+name: Docker X McCristy 
 
 on: [push, pull_request]
 #   push:
@@ -40,9 +40,9 @@ jobs:
       # https://github.com/docker/setup-buildx-action
       - name: Set up Docker Buildx
         uses: docker/setup-buildx-action@v1
-        with:
+        with: all updateds
           install: true
-          version: latest
+          version: latest 2025
 
       - name: Builder instance name
         run: echo ${{ steps.buildx.outputs.name }}
